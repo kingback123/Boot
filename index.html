@@ -2,66 +2,44 @@
 <html lang="en" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
-    <title>小范围服务平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>网易云音乐</title>
     <link href="lib/materialize/css/material-icons.css" rel="stylesheet">
     <link href="lib/materialize/css/materialize.css" rel="stylesheet">
     <link href="lib/css/app.css" rel="stylesheet">
 </head>
 <body>
 
-<div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="etuan-group.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="full-logo.png"></a>
-    <!--<a class="carousel-item" href="#three!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
-    <!--<a class="carousel-item" href="#four!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
-    <!--<a class="carousel-item" href="#five!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
-</div>
+ <nav>
+    <div class="nav-wrapper">
+        <i class="mdi-av-album brand-logo">网易云音乐</i>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="badges">发现音乐</a></li>
+            <li><a href="buttons">我的音乐</a></li>
+            <li><a href="footer">朋友</a></li>
+            <li>
+                <form>
+                <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label for="search"><i class="mdi-action-search"></i></label>
+                    <i class="mdi-navigation-close"></i>
+                </div>
+                </form>
+            </li>
+            <li><a href="footer">登录</a></li>
+        </ul>
+    </div>
+</nav>
 
-<div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="etuan-group.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="full-logo.png"></a>
-    <!--<a class="carousel-item" href="#three!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
-    <!--<a class="carousel-item" href="#four!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
-</div>
+ <div ng-view></div>
 
-
-<div id="doc">
-    <div ui-view></div>
-</div>
-
-<!--<div>-->
-<!--<footer class="page-footer">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col l6 s12">-->
-                <!--<h5 class="white-text">小范围虚拟服务平台</h5>-->
-                <!--<p class="grey-text text-lighten-4">旨在让生活变得更好</p>-->
-            <!--</div>-->
-            <!--<div class="col l4 offset-l2 s12">-->
-                <!--<h5 class="white-text">开发者</h5>-->
-                <!--<ul>-->
-                    <!--<li><a class="grey-text text-lighten-3" href="#!">kingback123</a></li>-->
-                    <!--<li><a class="grey-text text-lighten-3" href="#!">康玉明</a></li>-->
-                    <!--<li><a class="grey-text text-lighten-3" href="#!">张贤军</a></li>-->
-                    <!--<li><a class="grey-text text-lighten-3" href="#!">张维</a></li>-->
-                    <!--<li><a class="grey-text text-lighten-3" href="#!">程过</a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="footer-copyright">-->
-        <!--<div class="container">-->
-            <!--© 2014 Copyright Text-->
-            <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</footer>-->
-<!--</div>-->
 
 <!-- jquery -->
 <script src="lib/jquery/jquery.min.js"></script>
 <!--angular-->
 <script src="lib/angular/angular.js"></script>
+ <!--angular-route-->
+<script src="lib/angular-components/angular-route.min.js"></script>
 <!-- material -->
 <script src="lib/materialize/js/materialize.min.js"></script>
 <!-- ng-material -->
