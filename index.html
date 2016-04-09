@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>小范围服务平台</title>
+    <link href="lib/materialize/css/material-icons.css" rel="stylesheet">
+    <link href="lib/materialize/css/materialize.css" rel="stylesheet">
+    <link href="lib/css/app.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="etuan-group.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="full-logo.png"></a>
+    <!--<a class="carousel-item" href="#three!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
+    <!--<a class="carousel-item" href="#four!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
+    <!--<a class="carousel-item" href="#five!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
+</div>
+
+<div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="etuan-group.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="full-logo.png"></a>
+    <!--<a class="carousel-item" href="#three!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
+    <!--<a class="carousel-item" href="#four!"><img src="lib/img/bg/etuan-group.jpg"></a>-->
+</div>
+
+
+<div id="doc">
+    <div ui-view></div>
+</div>
+
+<!--<div>-->
+<!--<footer class="page-footer">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col l6 s12">-->
+                <!--<h5 class="white-text">小范围虚拟服务平台</h5>-->
+                <!--<p class="grey-text text-lighten-4">旨在让生活变得更好</p>-->
+            <!--</div>-->
+            <!--<div class="col l4 offset-l2 s12">-->
+                <!--<h5 class="white-text">开发者</h5>-->
+                <!--<ul>-->
+                    <!--<li><a class="grey-text text-lighten-3" href="#!">kingback123</a></li>-->
+                    <!--<li><a class="grey-text text-lighten-3" href="#!">康玉明</a></li>-->
+                    <!--<li><a class="grey-text text-lighten-3" href="#!">张贤军</a></li>-->
+                    <!--<li><a class="grey-text text-lighten-3" href="#!">张维</a></li>-->
+                    <!--<li><a class="grey-text text-lighten-3" href="#!">程过</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="footer-copyright">-->
+        <!--<div class="container">-->
+            <!--© 2014 Copyright Text-->
+            <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+<!--</div>-->
+
+<!-- jquery -->
+<script src="lib/jquery/jquery.min.js"></script>
+<!--angular-->
+<script src="lib/angular/angular.js"></script>
+<!-- material -->
+<script src="lib/materialize/js/materialize.min.js"></script>
+<!-- ng-material -->
+<script src="lib/materialize/js/angular-materialize.js"></script>
+<!--app.js-->
+<script  src="app.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel();
+    });
+</script>
+</body>
+</html>
