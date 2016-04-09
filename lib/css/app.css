@@ -1,0 +1,340 @@
+html{
+  min-height: 100%;
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  height: 100%;
+  background: #e1e2e2;
+}
+html::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+/*顶部导航*/
+header {
+  position: fixed;
+  top: 0;
+  height: 56px;
+  background: #1672ce;
+  z-index: 999;
+}
+nav .brand-logo {
+  font-size: medium
+}
+/*内容*/
+.top-bar {
+  height: 56px;
+  width: 100%;
+}
+/*.doc-body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}*/
+/*底部导航*/
+footer{
+  //height: 50px;
+}
+.fragment{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #1672ce;
+}
+.fragment .tabs .tab {
+  background: #1672ce;
+}
+.fragment .tabs .tab a {
+  color: #4ecdf2;
+}
+.fragment .tabs .tab-active {
+  color: #fff;
+}
+/*滚动标签*/
+.slider .indicators .indicator-item {
+  background: #fff;
+}
+.slider .indicators{
+  position: relative !important;
+  top: -30px  !important;
+  z-index: 999;
+  margin-bottom: 5px; 
+}
+.slider{
+  height: 200px !important;
+}
+/*滑动标签*/
+.competition{
+  margin: 5px 0;
+  display: inline-flex;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden; 
+}
+.competition::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.competition::-webkit-scrollbar-thumb{
+ 
+}
+.competition .sli {
+  background: #fff;
+  margin: 0 4px;
+  white-space:nowrap;
+}
+/*垂直时间轴*/
+.timeline {
+  position: relative;
+}
+.timeline .timeline-body {
+  margin: 10px 5px;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  left:20px;
+}
+.timeline .timeline-body:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: #afdcf8;
+}
+.timeline .timeline-body>li {
+  position: relative;
+}
+.timeline .timeline-body>li .tip {
+  width: 20px;
+  height: 20px;
+  background: #afdcf8;
+  margin-left: -8px;
+  color: #fff;
+  background: #46a4da;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #afdcf8;
+  text-align: center;
+  top: 3px;
+  position: absolute;
+}
+.timeline .timeline-body>li .time{
+  margin: 0 0 0 30px;
+  line-height: 30px;
+  display: inline;
+}
+.timeline .timeline-body>li .content {
+  margin: 0 20px;
+  padding: 0 5px;
+  min-height: 50px;
+}
+
+.collapsible.popout > li {
+  margin: 0 !important;
+}
+/*列表*/
+.collection {
+  padding: 0;
+  margin:0;
+}
+
+
+
+.myTeamImg{
+  vertical-align:middle;
+}
+
+
+.myTeamName{
+  font-size: large;
+}
+
+
+.card-content{
+  padding: 20px 0 20px 0!important;
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+
+
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #d7e4ed;
+}
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+.cd-timeline-num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  line-height: 40px;
+}
+.cd-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: white;
+  border-radius: 0.25em;
+  padding: 0 1em 1em 0;
+  box-shadow: 0 3px 0 #d7e4ed;
+}
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-content p, .cd-timeline-content .cd-date {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+.cd-timeline-content .cd-date {
+  display: inline-block;
+}
+.cd-timeline-content p {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+.no-touch .cd-timeline-content .cd-read-more:hover {
+  background-color: #bac4cb;
+}
+.cd-timeline-content .cd-date {
+  float: right;
+  padding: .8em 0;
+  opacity: .7;
+}
+.cd-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid white;
+}
+/*小型块高度*/
+.small-block-lists {
+  max-height: 10rem;
+  overflow: hidden;
+} 
+.small-block-lists .desc{
+  overflow:hidden;
+}
+/*聊天界面*/
+.IM {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.IM .msg {
+  position: fixed;
+  top: 50px;
+  bottom: 50px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+}
+.IM .msg::-webkit-scrollbar {
+    /*width: 5px;*/
+    /*height: 0;*/
+}
+.IM .msg::-webkit-scrollbar-thumb{
+ 
+}
+.IM .content-box {
+  display: flex;
+  background: #fff;
+  position: relative;
+}
+.IM .content-box i{
+  position: absolute;
+  bottom: 12px;
+}
+.IM .content-box textarea{
+  padding:0;
+  min-height:3rem;
+  max-height: 8rem;
+  overflow: hidden;
+  width: 60%;
+}
+.IM .content-box button{
+  position: absolute;
+  bottom: 13px; 
+  right: 5px;
+  width:20%;
+  padding:0 10px
+}
+.IM .IM-text-align-right {
+  text-align: right;
+  right: 0;
+}
+.IM .msg-box {
+  background: #fff;
+}
+/*竞赛信息展示页面*/
+.doc-show {
+  color: #000;
+}
+.doc-show .title{
+  margin: 0;
+  font-size: 2rem;
+  padding: 0;
+  text-indent:1em;
+}
+.doc-show .content {
+  margin: 3px;
+  border-top: 1px solid;
+}
+.doc-show .content p{
+  text-indent:2em;
+  overflow: scroll;
+  width: 100%;
+}
+.doc-show .content h1{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 900;
+}
+.doc-show .content h2{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 900;
+}
+.doc-show .content img {
+  max-width: 100%; 
+  float: left;
+}
